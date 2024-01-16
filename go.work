@@ -1,0 +1,8 @@
+go 1.21.5
+
+use (
+	./Nomor1
+	./Nomor2
+	./Nomor3
+	./Nomor4
+)
