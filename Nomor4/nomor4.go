@@ -43,9 +43,19 @@ func SeleksiNilai(nilaiAwal, nilaiAkhir int, dataArray []int) {
 	}
 }
 func main() {
+	//berhasil
 	numbers := []int{2, 25, 4, 14, 17, 30, 8}
 	SeleksiNilai(5, 20, numbers)
 
-	cek := []int{1, 1, 3}
-	SeleksiNilai(5, 20, cek)
+	//Jumlah angka dalam array harus lebih dari 5
+	lebihBesar := []int{1, 1, 3}
+	SeleksiNilai(5, 20, lebihBesar)
+
+	//nilai akhir harus lebih besar dari nilai awal
+	nilaiAkhir := []int{1, 1, 3, 2, 4}
+	SeleksiNilai(20, 5, nilaiAkhir)
+
+	//Nilai Tidak Ditemukan
+	nilaiTidakDitemukan := []int{1, 1, 3, 2, 4, 1}
+	SeleksiNilai(5, 15, nilaiTidakDitemukan)
 }
